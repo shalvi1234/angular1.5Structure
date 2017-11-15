@@ -1,0 +1,238 @@
+nohup: ignoring input
+
+> @ serve:dist /home/test/PSIM_UI_6_0_Git/angular_ui
+> gulp serve:dist
+
+[11:02:42] Loading /home/test/PSIM_UI_6_0_Git/angular_ui/gulp_tasks/browsersync.js
+[11:02:42] Loading /home/test/PSIM_UI_6_0_Git/angular_ui/gulp_tasks/karma.js
+[11:02:43] Loading /home/test/PSIM_UI_6_0_Git/angular_ui/gulp_tasks/misc.js
+[11:02:43] Loading /home/test/PSIM_UI_6_0_Git/angular_ui/gulp_tasks/webpack.js
+[11:02:44] Using gulpfile /home/test/PSIM_UI_6_0_Git/angular_ui/gulpfile.js
+[11:02:44] Starting 'serve:dist'...
+[11:02:44] Starting 'default'...
+[11:02:44] Starting 'clean'...
+[11:02:44] Finished 'clean' after 119 ms
+[11:02:44] Starting 'build'...
+[11:02:44] Starting 'other'...
+[11:02:44] Starting 'webpack:dist'...
+[11:03:34] Time: [1m49888[39m[22mms
+                                     [1mAsset[39m[22m      [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1mChunk Names[39m[22m
+      [1m[32m3617e09e075f2af8fb8e046eeffc3e63.jpg[39m[22m    404 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+               [1m[32mapp-e4618931f4ec4b3edda9.js[39m[22m    629 kB       [1m0[39m[22m  [1m[32m[emitted][39m[22m  app
+            [1m[32mvendor-e4618931f4ec4b3edda9.js[39m[22m    427 kB       [1m1[39m[22m  [1m[32m[emitted][39m[22m  vendor
+[1m[32mindex-7b9d6aa9fac89b359aa78e630d799701.css[39m[22m    926 kB       [1m0[39m[22m  [1m[32m[emitted][39m[22m  app
+                                [1m[32mindex.html[39m[22m   1.58 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+ [1m[32m../../../../../app/config/abc-config.json[39m[22m   1.25 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+ [1m[32m../../../../../app/config/api-config.json[39m[22m  84 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+
+[1m[33mWARNING in ./src/index.js
+
+/home/test/PSIM_UI_6_0_Git/angular_ui/src/index.js
+  47:55  warning  '$stateParams' is defined but never used                                     no-unused-vars
+  64:15  warning  You should use the $document service instead of the default document object  angular/document-service
+  77:9   warning  Avoid using a variable and instead use chaining with the getter syntax       angular/module-getter
+  80:25  warning  You should use the $document service instead of the default document object  angular/document-service
+
+✖ 4 problems (0 errors, 4 warnings)
+[39m[22m
+
+[1m[33mWARNING in ./src/app/components/dashboard/index.js
+
+/home/test/PSIM_UI_6_0_Git/angular_ui/src/app/components/dashboard/index.js
+   37:79  warning  'requests' is defined but never used                            no-unused-vars
+  101:9   warning  'approveAssignmentsPromise' is assigned a value but never used  no-unused-vars
+  253:9   warning  'approveAssignmentsPromise' is assigned a value but never used  no-unused-vars
+
+✖ 3 problems (0 errors, 3 warnings)
+
+ @ ./src/index.js 8:22-65[39m[22m
+
+[1m[33mWARNING in ./src/app/components/login/login-component.js
+
+/home/test/PSIM_UI_6_0_Git/angular_ui/src/app/components/login/login-component.js
+  20:24  warning  A function with a name starting with an uppercase letter should only be used as a constructor  new-cap
+
+✖ 1 problem (0 errors, 1 warning)
+
+ @ ./src/app/components/login/index.js 2:21-49
+ @ ./src/index.js[39m[22m
+
+[1m[33mWARNING in ./src/app/components/Profile/confirm-revoke.js
+
+/home/test/PSIM_UI_6_0_Git/angular_ui/src/app/components/Profile/confirm-revoke.js
+  1:22  warning  Multiline support is limited to browsers supporting ES5 only  no-multi-str
+
+✖ 1 problem (0 errors, 1 warning)
+
+ @ ./src/app/core/accounts/accounts.js 2:20-73
+ @ ./src/app/core/index.js
+ @ ./src/index.js[39m[22m
+
+[1m[33mWARNING in ./src/app/components/Profile/access-revoked.js
+
+/home/test/PSIM_UI_6_0_Git/angular_ui/src/app/components/Profile/access-revoked.js
+  1:18  warning  Multiline support is limited to browsers supporting ES5 only  no-multi-str
+
+✖ 1 problem (0 errors, 1 warning)
+
+ @ ./src/app/core/accounts/accounts.js 3:20-73
+ @ ./src/app/core/index.js
+ @ ./src/index.js[39m[22m
+
+[1m[33mWARNING in ./src/app/components/Profile/show-role-details.js
+
+/home/test/PSIM_UI_6_0_Git/angular_ui/src/app/components/Profile/show-role-details.js
+  1:18  warning  Multiline support is limited to browsers supporting ES5 only  no-multi-str
+
+✖ 1 problem (0 errors, 1 warning)
+
+ @ ./src/app/core/accounts/accounts.js 4:22-78
+ @ ./src/app/core/index.js
+ @ ./src/index.js[39m[22m
+
+[1m[33mWARNING in ./src/app/components/Profile/show-app-details.js
+
+/home/test/PSIM_UI_6_0_Git/angular_ui/src/app/components/Profile/show-app-details.js
+  1:19  warning  Multiline support is limited to browsers supporting ES5 only  no-multi-str
+
+✖ 1 problem (0 errors, 1 warning)
+
+ @ ./src/app/core/accounts/accounts.js 5:21-76
+ @ ./src/app/core/index.js
+ @ ./src/index.js[39m[22m
+
+[1m[33mWARNING in ./src/app/components/newRequest/saveAsTemplate.js
+
+/home/test/PSIM_UI_6_0_Git/angular_ui/src/app/components/newRequest/saveAsTemplate.js
+  1:18  warning  Multiline support is limited to browsers supporting ES5 only  no-multi-str
+
+✖ 1 problem (0 errors, 1 warning)
+
+ @ ./src/app/core/Templates/templates.js 2:15-71
+ @ ./src/app/core/index.js
+ @ ./src/index.js[39m[22m
+
+[1m[33mWARNING in app-e4618931f4ec4b3edda9.js from UglifyJs
+Condition always true [app-e4618931f4ec4b3edda9.js:89,8]
+Dropping unreachable code [app-e4618931f4ec4b3edda9.js:91,11]
+Dropping unused variable defaults [app-e4618931f4ec4b3edda9.js:101,16]
+Condition always true [app-e4618931f4ec4b3edda9.js:443,4]
+Dropping unreachable code [app-e4618931f4ec4b3edda9.js:445,6]
+Dropping unused function _toJson [app-e4618931f4ec4b3edda9.js:1509,10]
+Dropping unused function _fromJson [app-e4618931f4ec4b3edda9.js:1512,10]
+Dropping unused function promiseToString [app-e4618931f4ec4b3edda9.js:1515,10]
+Side effects in initialization of unused variable resolveContext [app-e4618931f4ec4b3edda9.js:2387,66]
+Dropping unused variable match [app-e4618931f4ec4b3edda9.js:5384,5]
+Dropping unused function $stateParamsFactory [app-e4618931f4ec4b3edda9.js:7059,10]
+Dropping unused variable $stateParams [app-e4618931f4ec4b3edda9.js:7162,5]
+Dropping unused variable $transitions [app-e4618931f4ec4b3edda9.js:7170,5]
+Dropping unused variable $transitionsProvider [app-e4618931f4ec4b3edda9.js:7178,5]
+Dropping unused variable $state [app-e4618931f4ec4b3edda9.js:7184,5]
+Dropping unused variable $stateProvider [app-e4618931f4ec4b3edda9.js:7190,5]
+Dropping unused variable $urlRouterProvider [app-e4618931f4ec4b3edda9.js:7196,5]
+Dropping unused variable $urlRouter [app-e4618931f4ec4b3edda9.js:7202,5]
+Dropping unused variable $urlMatcherFactory [app-e4618931f4ec4b3edda9.js:7211,5]
+Dropping unused variable $urlMatcherFactoryProvider [app-e4618931f4ec4b3edda9.js:7220,5]
+Condition always true [app-e4618931f4ec4b3edda9.js:8434,6]
+Dropping unreachable code [app-e4618931f4ec4b3edda9.js:8436,9]
+Dropping unused variable COMMENT_NODE [app-e4618931f4ec4b3edda9.js:8682,4]
+Dropping unused function getSlideByIndex [app-e4618931f4ec4b3edda9.js:14182,11]
+Dropping unused variable lastActivated [app-e4618931f4ec4b3edda9.js:14924,10]
+Dropping unused variable dataPerTracked [app-e4618931f4ec4b3edda9.js:14916,6]
+Dropping unused function cameltoDash [app-e4618931f4ec4b3edda9.js:16606,11]
+Dropping unused variable cache [app-e4618931f4ec4b3edda9.js:16335,6]
+Dropping unused variable selectedOption [app-e4618931f4ec4b3edda9.js:17001,4]
+Side effects in initialization of unused variable $element [app-e4618931f4ec4b3edda9.js:30909,10]
+Dropping unreachable code [app-e4618931f4ec4b3edda9.js:41620,6]
+Dropping unused variable expression [app-e4618931f4ec4b3edda9.js:36704,40]
+Dropping unused function includes [app-e4618931f4ec4b3edda9.js:22156,9]
+Dropping unused function nodesetLinkingFn [app-e4618931f4ec4b3edda9.js:31519,9]
+Dropping unused function directiveLinkingFn [app-e4618931f4ec4b3edda9.js:31526,9]
+Side effects in initialization of unused variable approveAssignmentsPromise [app-e4618931f4ec4b3edda9.js:53368,8]
+Side effects in initialization of unused variable approveAssignmentsPromise [app-e4618931f4ec4b3edda9.js:53520,8][39m[22m
+
+[1m[33mWARNING in vendor-e4618931f4ec4b3edda9.js from UglifyJs
+Side effects in initialization of unused variable $element [vendor-e4618931f4ec4b3edda9.js:9641,10]
+Dropping unreachable code [vendor-e4618931f4ec4b3edda9.js:20352,6]
+Dropping unused variable expression [vendor-e4618931f4ec4b3edda9.js:15436,40]
+Dropping unused function includes [vendor-e4618931f4ec4b3edda9.js:888,9]
+Dropping unused function nodesetLinkingFn [vendor-e4618931f4ec4b3edda9.js:10251,9]
+Dropping unused function directiveLinkingFn [vendor-e4618931f4ec4b3edda9.js:10258,9]
+Condition always true [vendor-e4618931f4ec4b3edda9.js:31866,8]
+Dropping unreachable code [vendor-e4618931f4ec4b3edda9.js:31868,11]
+Dropping unused variable defaults [vendor-e4618931f4ec4b3edda9.js:31878,16]
+Condition always true [vendor-e4618931f4ec4b3edda9.js:32223,4]
+Dropping unreachable code [vendor-e4618931f4ec4b3edda9.js:32225,6]
+Dropping unused function _toJson [vendor-e4618931f4ec4b3edda9.js:33289,10]
+Dropping unused function _fromJson [vendor-e4618931f4ec4b3edda9.js:33292,10]
+Dropping unused function promiseToString [vendor-e4618931f4ec4b3edda9.js:33295,10]
+Side effects in initialization of unused variable resolveContext [vendor-e4618931f4ec4b3edda9.js:34167,66]
+Dropping unused variable match [vendor-e4618931f4ec4b3edda9.js:37164,5]
+Dropping unused function $stateParamsFactory [vendor-e4618931f4ec4b3edda9.js:38839,10]
+Dropping unused variable $stateParams [vendor-e4618931f4ec4b3edda9.js:38942,5]
+Dropping unused variable $transitions [vendor-e4618931f4ec4b3edda9.js:38950,5]
+Dropping unused variable $transitionsProvider [vendor-e4618931f4ec4b3edda9.js:38958,5]
+Dropping unused variable $state [vendor-e4618931f4ec4b3edda9.js:38964,5]
+Dropping unused variable $stateProvider [vendor-e4618931f4ec4b3edda9.js:38970,5]
+Dropping unused variable $urlRouterProvider [vendor-e4618931f4ec4b3edda9.js:38976,5]
+Dropping unused variable $urlRouter [vendor-e4618931f4ec4b3edda9.js:38982,5]
+Dropping unused variable $urlMatcherFactory [vendor-e4618931f4ec4b3edda9.js:38991,5]
+Dropping unused variable $urlMatcherFactoryProvider [vendor-e4618931f4ec4b3edda9.js:39000,5]
+Condition always true [vendor-e4618931f4ec4b3edda9.js:40215,6]
+Dropping unreachable code [vendor-e4618931f4ec4b3edda9.js:40217,9]
+Dropping unused variable COMMENT_NODE [vendor-e4618931f4ec4b3edda9.js:40464,4]
+Dropping unused function getSlideByIndex [vendor-e4618931f4ec4b3edda9.js:45966,11]
+Dropping unused variable lastActivated [vendor-e4618931f4ec4b3edda9.js:46708,10]
+Dropping unused variable dataPerTracked [vendor-e4618931f4ec4b3edda9.js:46700,6]
+Dropping unused function cameltoDash [vendor-e4618931f4ec4b3edda9.js:48390,11]
+Dropping unused variable cache [vendor-e4618931f4ec4b3edda9.js:48119,6]
+Dropping unused variable selectedOption [vendor-e4618931f4ec4b3edda9.js:48785,4][39m[22m
+Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
+         [1mAsset[39m[22m     [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m     [1mChunk Names[39m[22m
+    [1m[32mindex.html[39m[22m  3.93 kB       [1m0[39m[22m  [1m[32m[39m[22m     
+Child [1mextract-text-webpack-plugin[39m[22m:
+                                   [1mAsset[39m[22m    [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m     [1mChunk Names[39m[22m
+    [1m[32m3617e09e075f2af8fb8e046eeffc3e63.jpg[39m[22m  404 kB        [1m[39m[22m  [1m[32m[39m[22m     
+Child [1mextract-text-webpack-plugin[39m[22m:
+    
+Child [1mextract-text-webpack-plugin[39m[22m:
+    
+Child [1mextract-text-webpack-plugin[39m[22m:
+    
+Child [1mextract-text-webpack-plugin[39m[22m:
+    
+Child [1mextract-text-webpack-plugin[39m[22m:
+    
+Child [1mextract-text-webpack-plugin[39m[22m:
+    
+Child [1mextract-text-webpack-plugin[39m[22m:
+    
+Child [1mextract-text-webpack-plugin[39m[22m:
+    
+Child [1mextract-text-webpack-plugin[39m[22m:
+    
+Child [1mextract-text-webpack-plugin[39m[22m:
+    
+Child [1mextract-text-webpack-plugin[39m[22m:
+    
+Child [1mextract-text-webpack-plugin[39m[22m:
+    
+Child [1mextract-text-webpack-plugin[39m[22m:
+    
+[11:03:34] Finished 'webpack:dist' after 50 s
+[11:03:34] Finished 'other' after 50 s
+[11:03:34] Finished 'build' after 50 s
+[11:03:34] Finished 'default' after 50 s
+[11:03:34] Starting 'browsersync:dist'...
+[11:03:34] Finished 'browsersync:dist' after 59 ms
+[11:03:34] Finished 'serve:dist' after 50 s
+[BS] [BrowserSync SPA] Running...
+[BS] Access URLs:
+ ------------------------------------
+       Local: http://localhost:3000
+    External: http://10.80.36.12:3000
+ ------------------------------------
+          UI: http://localhost:3001
+ UI External: http://10.80.36.12:3001
+ ------------------------------------
+[BS] Serving files from: dist

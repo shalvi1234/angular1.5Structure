@@ -1,0 +1,201 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+    #dashboard .profile-picture-icon{
+        background-image: url("images/user-profile128x128.png");
+        width: 128px;
+        height: 128px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 20px;
+        
+    }
+    #dashboard{
+        margin-top: 56px;
+    }
+    #dashboard .bg-2 { 
+      background-color: #8bb8f1;
+         /* #9289ca;  Dark Blue */
+      color: #ffffff;
+   }
+    #dashboard #send-view{
+    }
+    #dashboard #latest-updates{
+        color: black;
+    }
+    #dashboard #latest-updates .col-md-4{
+        text-align: center;
+    }
+
+    #dashboard .send-coins{
+        background-color: #52c6ea;
+    }
+    #dashboard .view-blocks{
+        background-color: #44d968;
+    }
+    #dashboard #latest-updates .arrow-triangle{
+      border: solid #8c8b8b;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    #dashboard #latest-updates .arrow-line{
+        display: inline-block;
+        width: 17vw;
+        border-top: 2px solid #8c8b8b;
+        padding: 2px;
+    }
+    #dashboard .no-padding-margin {
+       padding: 0 !important;
+       margin: 0 !important;
+    }
+    #dashboard #send-view label{
+        color: whitesmoke;
+    }
+
+    #dashboard .psl-coins ,#dashboard .psl-mine{
+       background-color: #8bb8f1; 
+       display: flex;
+    }
+    #dashboard .psl-coins .box1,#dashboard .psl-mine .box1{
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+    #dashboard .psl-mine{
+        background-color: #9289ca;
+    }
+    #dashboard .psl-mine var,#dashboard .psl-coins var{
+        float: right;
+        color: whitesmoke;
+    }
+    #dashboard .psl-coins .icon-coin,#dashboard .psl-mine .icon-mine,
+    #dashboard .psl-coins var,#dashboard .psl-mine var{
+        font-size: 30px;
+        color: whitesmoke;
+        margin-right: 10px;
+    }
+    #dashboard .psl-coins label,#dashboard .psl-mine label{
+        font-size: 15px;
+        color: whitesmoke;
+    }
+    #dashboard .container0{
+    background: linear-gradient(to bottom, #006999 50%, white 50%, white);
+    }
+    #dashboard .container1{
+        background-color: #006999;
+        color: whitesmoke;
+        margin-bottom: 10px;
+        min-height: 65px;
+    }
+    #dashboard .container1 div{
+        background-color: #006999;
+        color: whitesmoke;
+        font-size: 13px;
+        
+    }
+    #dashboard .total-psl-coin{
+        color: whitesmoke;
+    }
+    #dashboard #latest-updates #one-update{
+        display: flex;
+    }
+    #dashboard #latest-updates #one-update #fromUser,
+    #dashboard #latest-updates #one-update #toUser{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<div id="dashboard">
+<!-- First Container -->  
+<div class="container-fluid container1 bg-1 text-center"><!--container0-->
+    <!--<div class="profile-picture-icon"></div>-->
+    <div><h4>Hi...{{dashboardCtrl.userName}}!</h4></div>       
+    <div class="total-psl-coins">(
+        <span class="icon-coin"><i class="glyphicon glyphicon-bitcoin"></i></span>
+        <span>PSL Coins</span>
+        <var>{{dashboardCtrl.pslCoins}}</var>)
+    </div>
+    
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid">
+<!--    <div class=" col-md-6">
+    <div class="psl-coins well well-lg">
+        <div class="box1">
+            <span class="icon-coin"><i class="glyphicon glyphicon-asterisk"></i></span>
+            <label class="text-muted">PSL COINS</label>
+        </div>
+        <var>{{dashboardCtrl.pslCoins}}</var>
+    </div>
+    </div>-->
+    <div class=" col-md-6">
+         <a ui-sref="app.viewBlocks">
+            <div class="psl-mine well well-sm ">
+                <div class="box1">
+                    <span class="icon-mine"><i class="glyphicon glyphicon-th"></i></span>
+                    <label class="text-muted">BLOCKS</label>
+                </div>
+                <var>{{dashboardCtrl.blocks}}</var>
+            </div>
+        </a>
+    </div>
+</div>
+    
+    
+<!--Third Container -->   
+<div class="container-fluid " id="send-view">
+    <div class=" col-md-6">
+    <a ui-sref="app.sendCoins">
+        <div class="send-coins well well-sm">
+            <div class="text">
+                 <label class="text-muted">SEND COINS</label>
+            </div>
+        </div>
+    </a>
+    </div>
+<!--    <div class=" col-md-6">
+        <a ui-sref="app.viewBlocks">
+            <div class="view-blocks well well-sm ">
+                <div class="text">
+                    <label class="text-muted">VIEW BLOCKS</label>
+                </div>
+            </div>
+        </a>
+    </div>-->
+</div>
+<!--  Fourth  Container -->
+  
+<div class="container-fluid bg-2 " id="latest-updates" >
+<a ui-sref="app.latestUpdates">
+  <h4 class="margin">Latest Updates</h4>
+    <div ng-repeat="update in dashboardCtrl.latestUpdates| filter:searchText">
+        <div class="well well-sm">
+          <div class="row" id="one-update">
+              <span class="col-md-4 col-xs-4 text-muted" id="fromUser"><label class="text-muted">{{update.fromUser}}</label></span>
+              <span class="col-md-4 col-xs-4">
+                  <span class="row no-padding-margin text-muted">{{update.noOfCoins}} Coins</span>
+                  <span class="row no-padding-margin">             
+                      <span class="arrow-line"></span>
+                      <div class="arrow-triangle"></div>
+                  </span>
+                    <span class="row no-padding-margin text-muted">{{update.timeDate}}</span>
+              </span>
+              <span class="col-md-4 col-xs-4" id="toUser"> <label class="text-muted">{{update.toUser}}</label></span>
+          </div>
+        </div>
+    </div>
+    </a>
+</div>
+
+
+</div>
+
+
+
+
+		

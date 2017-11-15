@@ -1,0 +1,12 @@
+1. Login to hj-ibmibm757 VM using credentials db2admin/db2@dmin123
+2. Open command prompt and go to C:\Program Files (x86)\IBM\WebSphere\AppServer\profiles\AppSrv08\bin directory to execute below mentioned commands
+
+To Stop Server:
+stopServer.bat server1 -username wasadmin -password secret
+
+To clear cache:
+Delete below folders from  C:\Program Files (x86)\IBM\WebSphere\AppServer\profiles\AppSrv08
+temp, logs, wstemp, tranlogs
+
+To restart Server:
+startServer.bat server1

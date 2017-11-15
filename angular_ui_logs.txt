@@ -1,0 +1,47 @@
+
+> @ serve /home/test/PSIM_UI_6_0_Git/angular_ui
+> gulp serve
+
+[11:10:11] Loading /home/test/PSIM_UI_6_0_Git/angular_ui/gulp_tasks/browsersync.js
+[11:10:11] Loading /home/test/PSIM_UI_6_0_Git/angular_ui/gulp_tasks/karma.js
+[11:10:11] Loading /home/test/PSIM_UI_6_0_Git/angular_ui/gulp_tasks/misc.js
+[11:10:11] Loading /home/test/PSIM_UI_6_0_Git/angular_ui/gulp_tasks/webpack.js
+[11:10:12] Using gulpfile /home/test/PSIM_UI_6_0_Git/angular_ui/gulpfile.js
+[11:10:12] Starting 'serve'...
+[11:10:12] Starting 'webpack:watch'...
+[11:10:20] Time: [1m7867[39m[22mms
+                               [1mAsset[39m[22m     [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1mChunk Names[39m[22m
+[1m[32m3617e09e075f2af8fb8e046eeffc3e63.jpg[39m[22m   404 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+                            [1m[32mindex.js[39m[22m     8 MB       [1m0[39m[22m  [1m[32m[emitted][39m[22m  main
+                          [1m[32mindex.html[39m[22m  1.41 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m  
+Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
+         [1mAsset[39m[22m     [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m     [1mChunk Names[39m[22m
+    [1m[32mindex.html[39m[22m  6.59 kB       [1m0[39m[22m  [1m[32m[39m[22m     
+[11:10:20] Finished 'webpack:watch' after 7.9 s
+[11:10:20] Starting 'watch'...
+[11:10:20] Finished 'watch' after 86 ms
+[11:10:20] Starting 'browsersync'...
+[11:10:20] Finished 'browsersync' after 54 ms
+[11:10:20] Finished 'serve' after 8.04 s
+[BS] [BrowserSync SPA] Running...
+[BS] Access URLs:
+ ------------------------------------
+       Local: http://localhost:3000
+    External: http://10.80.36.12:3000
+ ------------------------------------
+          UI: http://localhost:3001
+ UI External: http://10.80.36.12:3001
+ ------------------------------------
+[BS] Serving files from: .tmp
+[BS] Serving files from: src
+[09:37:59] Starting 'reloadBrowserSync'...
+[BS] Reloading Browsers...
+[09:37:59] Finished 'reloadBrowserSync' after 8.5 ms
+[09:38:00] Time: [1m806[39m[22mms
+                               [1mAsset[39m[22m    [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1mChunk Names[39m[22m
+[1m[32m3617e09e075f2af8fb8e046eeffc3e63.jpg[39m[22m  404 kB        [1m[39m[22m  [1m[32m[39m[22m           
+                            [1m[32mindex.js[39m[22m    8 MB       [1m0[39m[22m  [1m[32m[emitted][39m[22m  main
+Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
+         [1mAsset[39m[22m     [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m     [1mChunk Names[39m[22m
+    [1m[32mindex.html[39m[22m  6.59 kB       [1m0[39m[22m  [1m[32m[39m[22m     
+[BS] Reloading Browsers...

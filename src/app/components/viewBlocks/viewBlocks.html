@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+    #viewBlocks .no-padding-margin {
+       padding: 0 !important;
+       margin: 0 !important;
+    }    
+    #viewBlocks{
+        margin-top: 56px;
+        color: black;
+    }
+    #viewBlocks input{
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        font-size: smaller;
+        width: 90%;
+        font-style: italic;
+    }
+    #viewBlocks input:focus, #viewBlocks textarea:focus {
+        outline: none;
+    }
+    #viewBlocks #one-block{
+        display: flex;
+    }
+    #viewBlocks #one-block #id{
+        display: flex;
+        align-items: center;
+    }
+</style>
+<div class="container-fluid bg-2 " id="viewBlocks" >
+    <div class="row" >
+    <div class="col-md-6 col-xs-12"> <h4 class="margin">Blocks</h4></div>
+    <div class="col-md-6 col-xs-12"><h5><input placeholder="Search your Block" ng-model="searchText"><span><i class="glyphicon glyphicon-search text-muted"></i></span></h5></div>
+    </div>
+ 
+    <div ng-repeat="block in viewBlocksCtrl.listOfBlocks| filter:searchText">
+        <div class="well well-sm">
+          <div class="row" id="one-block">
+              <span class="col-md-2 col-xs-2 text-muted" id="id">
+                  <div><label class="text-muted">{{block.id}}</label></div>
+              </span>
+              <span class="col-md-10 col-xs-10">
+                  <span class="row no-padding-margin"><label  class="text-muted">Mined by : {{block.user}}</label> </span>
+                  <span class="row no-padding-margin">             
+                      <div class="col-md-4 no-padding-margin col-xs-4"><label class="text-muted"> TX : {{block.tx}}</label></div>
+                      <div class="col-md-4 no-padding-margin col-xs-4"><label class="text-muted"> rew : {{block.rew}}</label></div>
+                  </span>
+              </span>
+          </div>
+        </div>
+    </div>
+</div>

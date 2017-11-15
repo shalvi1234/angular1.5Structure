@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+    #all-latest-updates .arrow-triangle{
+      border: solid #8c8b8b;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    #all-latest-updates .arrow-line{
+        display: inline-block;
+        width: 17vw;
+        border-top: 2px solid #8c8b8b;
+        padding: 2px;
+    }
+    #all-latest-updates .no-padding-margin {
+       padding: 0 !important;
+       margin: 0 !important;
+    }    
+    #all-latest-updates{
+        margin-top: 56px;
+        color: black;
+    }
+    #all-latest-updates .col-md-4{
+        text-align: center;
+    }
+    #all-latest-updates input{
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        font-size: smaller;
+        width: 90%;
+        font-style: italic;
+    }
+    #all-latest-updates input:focus, #all-latest-updates textarea:focus {
+        outline: none;
+    }
+    #all-latest-updates #one-update{
+        display: flex;
+    }
+    #all-latest-updates #one-update #fromUser,
+    #all-latest-updates #one-update #toUser{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<div class="container-fluid bg-2 " id="all-latest-updates" >
+    <div class="row" >
+    <div class="col-md-6 col-xs-12"> <h4 class="margin">Transactions</h4></div>
+    <div class="col-md-6 col-xs-12"><h5><input placeholder="Search your transaction" ng-model="searchText"><span><i class="glyphicon glyphicon-search text-muted"></i></span></h5></div>
+    </div>
+    <div ng-repeat="update in latestUpdatesCtrl.latestUpdates| filter:searchText">
+        <div class="well well-sm">
+          <div class="row" id="one-update">
+              <span class="col-md-4 col-xs-4 text-muted" id="fromUser"><label class="text-muted">{{update.fromUser}}</label></span>
+              <span class="col-md-4 col-xs-4">
+                  <span class="row no-padding-margin text-muted">{{update.noOfCoins}} Coins</span>
+                  <span class="row no-padding-margin">             
+                      <span class="arrow-line"></span>
+                      <div class="arrow-triangle"></div>
+                  </span>
+                    <span class="row no-padding-margin text-muted">{{update.timeDate}}</span>
+              </span>
+              <span class="col-md-4 col-xs-4" id="toUser"> <label class="text-muted">{{update.toUser}}</label></span>
+          </div>
+        </div>
+    </div>
+</div>

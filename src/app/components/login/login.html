@@ -1,0 +1,168 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+    #loginPage{
+        background-image: url("images/snow-mountain.jpg");
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    #loginPage #login-panel{
+        margin: auto;
+        width: 80vw;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 365px;
+        border-radius: 8px;
+        /*font-family: serif;*/
+
+    }
+    #loginPage #login-panel .panel-heading{
+        background-color: #3A3F51;
+        height: 50px;
+        font-size: 10pt;
+        border-radius: 8px 8px 0px 0px; 
+        font-size: 15px;
+    }
+    #loginPage #haveAccount{
+        margin-top: 15px;
+        text-align: center;
+    }
+    #loginPage .info {
+        background-color: #2196F3;
+        color: white;
+    } /* Blue */
+    #loginPage .success {
+        background-color: #25b146;
+        color: white;
+    } /* Blue */
+    #loginPage .info:hover {
+        background: #0b7dda;
+        color: white;
+    }
+    
+    
+    #loginPage .default {
+        border-color: #e7e7e7; 
+        color: black;
+        background-color: white;
+    } /* Gray */ 
+    #loginPage .default:hover {}
+    
+    #loginPage input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 30px white inset;
+    }
+    #loginPage input:-webkit-autofill {
+        -webkit-text-fill-color: gray!important;
+    }
+    #loginPage #login-form .input-group,#loginPage #login-form button,#loginPage #registerNow{
+        margin-top: 15px;
+    }
+    #loginPage .no-padding-margin {
+       padding: 0 !important;
+       margin: 0 !important;
+    }
+    #loginPage .navbar-nav{
+        width: 100%;
+        background-color: #ebebeb;
+        height: 50px;
+        margin: 0px;
+    }
+    #loginPage .navbar-nav>li, .navbar-nav {
+        float: left !important;
+    }
+    #loginPage .navbar-nav>li{
+        text-align: center;
+        width: 100%;
+        font-size: 15px;
+        padding-top: 5px;
+        height: inherit;
+    }
+    #loginPage .navbar-nav>li>a{
+        color: #000000;
+        text-decoration: none;
+    }
+    #loginPage.navbar-nav > li > a:hover {
+        color: #f37021;
+    }
+    #loginPage .navbar-nav > li.active {
+        background-color: white;
+        border-style: solid;
+        border-top-width: 4px !important;
+        border-width: 2px;
+        border-top-color: #f37020 !important;
+        border-color: gray;
+        border-bottom-color: transparent;
+    }
+    #loginPage .navbar-nav > li.active >a{
+        color: #f37021;
+    }
+</style>
+
+
+    <div id="loginPage" ng-if="loginCtrl.activeTab=='LOGIN'">
+        <div class="panel panel-primary" id="login-panel">
+          <div class="panel-heading"><img ng-src="images/logo-for-dashboard.png">Persistent Systems</div>
+          <div class="panel-body">
+                     <div class="row no-padding">
+                    <ul class="nav navbar-nav navbar-left .no-padding-margin">
+                        <li ng-class="{active:(loginCtrl.activeTab=='LOGIN')}" ng-click="loginCtrl.showLogin()">
+                            <a data-toggle="tab"  >Login</a>
+                        </li>
+<!--                        <li ng-class="{active:(loginCtrl.activeTab=='SIGNUP')}" ng-click="loginCtrl.showSignUp()">
+                            <a data-toggle="tab" >Signup</a>
+                        </li>-->
+                    </ul>
+                   </div> 
+              <form ng-submit="loginCtrl.login()" id="login-form">
+                <div class="input-group">
+                  <input id="email" type="text" class="form-control" name="email" placeholder="Enter username"><!--ng-model="loginCtrl.username"-->
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user text-muted"></i>  </span>
+                </div>
+<!--                <div class="input-group">
+                  <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-lock  text-muted"></i></span>
+                </div>-->
+                  <button type="submit" class="btn info btn-block" >Login</button>
+                  <!--<div id="haveAccount">Need to Signup?</div> -->
+              </form>  
+                <!--<button id="registerNow" type="" class="btn default btn-block" ng-click="loginCtrl.showSignUp()">Register Now</button>-->
+          </div>
+        </div>
+    </div>
+    <div id="loginPage" ng-if="loginCtrl.activeTab=='SIGNUP'">
+        <div class="panel panel-primary" id="login-panel">
+          <div class="panel-heading">TSQ Admin</div>
+          <div class="panel-body">                               
+              <div class="row no-padding">
+                    <ul class="nav navbar-nav navbar-left .no-padding-margin">
+                        <li ng-class="{active:(loginCtrl.activeTab=='LOGIN')}" ng-click="loginCtrl.showLogin()">
+                            <a data-toggle="tab"  >Login</a>
+                        </li>
+                        <li ng-class="{active:(loginCtrl.activeTab=='SIGNUP')}" ng-click="loginCtrl.showSignUp()">
+                            <a data-toggle="tab" >Signup</a>
+                        </li>
+                    </ul>
+                   </div> 
+              <form ng-submit="loginCtrl.login()" id="login-form">
+                <div class="input-group">
+                  <input id="email" type="text" class="form-control" name="email" placeholder="Enter username"><!--ng-model="loginCtrl.username"-->
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user text-muted"></i>  </span>
+                </div>
+<!--                <div class="input-group">
+                  <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-lock  text-muted"></i></span>
+                </div>-->
+                  <button type="" class="btn success btn-block" ng-click="loginCtrl.generateUserName()">Generate username</button>
+                  <button type="submit" class="btn info btn-block" >Create account</button>
+                  
+                  <!--<div id="haveAccount">Have an account?</div> -->
+              </form>  
+                <!--<button id="registerNow" type="" class="btn default btn-block" ng-click="loginCtrl.showLogin()">Login </button>-->
+          </div>
+        </div>
+    </div>
+
+<page-footer></page-footer>
+
